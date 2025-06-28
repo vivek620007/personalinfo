@@ -18,13 +18,6 @@ const routes = [
     path: '/account/login',
     component: () => import('@/pages/Login.vue'),
   },
-
-  {
-    name: 'Certificate',
-    path: '/certificate',
-    component: () => import('@/pages/Certificate.vue'),
-  },
-
   {
     name: 'About',
     path: '/about',

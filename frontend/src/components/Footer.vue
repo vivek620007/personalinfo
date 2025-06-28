@@ -1,16 +1,13 @@
 <template>
     <div class="bg-dark-blue w-full py-8">
         <div class="container mx-auto px-4">
-            <!-- Contact Me Section -->
             <div class="flex flex-col items-center justify-center">
                 <h2 class="text-xl md:text-2xl font-bold mb-8">
                     <span class="text-white">CONTACT</span>
                     <span class="text-orange-500"> ME</span>
                 </h2>
 
-                <!-- Contact Links -->
                 <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
-                    <!-- LinkedIn -->
                     <a href="https://linkedin.com"
                         class="flex items-center text-white hover:text-orange-500 transition duration-300">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
@@ -21,7 +18,6 @@
                         <span>LinkedIn</span>
                     </a>
 
-                    <!-- Github -->
                     <a href="https://github.com"
                         class="flex items-center text-white hover:text-orange-500 transition duration-300">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
@@ -32,7 +28,6 @@
                         <span>Github</span>
                     </a>
 
-                    <!-- WhatsApp -->
                     <a href="tel:+9798986684"
                         class="flex items-center text-white hover:text-orange-500 transition duration-300">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
@@ -43,7 +38,6 @@
                         <span>+91 9798986684</span>
                     </a>
 
-                    <!-- Email -->
                     <a href="mailto:prabhakarkumar16181@gmail.com"
                         class="flex items-center text-white hover:text-orange-500 transition duration-300">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"
@@ -55,10 +49,8 @@
                     </a>
                 </div>
 
-                <!-- Divider Line -->
                 <div class="w-full md:w-3/4 lg:w-1/2 h-px bg-gray-700 mb-5"></div>
 
-                <!-- Copyright Text -->
                 <p class="text-gray-400 text-sm text-center">
                     Copyright © 2023 Vivek Kumar. All Rights Reserved.
                 </p>
@@ -68,12 +60,10 @@
 </template>
 
 <script setup>
-// No additional script setup needed for this component
 </script>
 
 <style scoped>
 .bg-dark-blue {
     background-color: #0a101e;
-    /* Dark blue color matching the image */
 }
 </style>

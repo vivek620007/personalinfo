@@ -8,7 +8,7 @@ const projects = ref([
         id: 1,
         title: 'E-commerce Platform',
         description: 'A fully responsive e-commerce website with product filtering, cart functionality, and payment integration.',
-        image: 'https://via.placeholder.com/400x250',
+        image: '/images/image.png',
         technologies: ['React', 'Redux', 'Node.js', 'MongoDB'],
         liveDemo: '#',
         sourceCode: '#'
@@ -17,7 +17,7 @@ const projects = ref([
         id: 2,
         title: 'Task Management App',
         description: 'A drag-and-drop task management application with user authentication and real-time updates.',
-        image: 'https://via.placeholder.com/400x250',
+        image: '/images/image copy.png',
         technologies: ['React', 'Firebase', 'Tailwind CSS'],
         liveDemo: '#',
         sourceCode: '#'
@@ -26,7 +26,7 @@ const projects = ref([
         id: 3,
         title: 'Weather Dashboard',
         description: 'A weather application that displays current conditions and forecasts based on user location or search.',
-        image: 'https://via.placeholder.com/400x250',
+        image: '/images/image copy 2.png',
         technologies: ['React', 'API Integration', 'CSS'],
         liveDemo: '#',
         sourceCode: '#'

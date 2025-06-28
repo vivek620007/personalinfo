@@ -121,9 +121,9 @@ import Navbar from '../components/Navbar.vue';
       <!-- Image Container -->
       <div class="w-full md:w-1/2 mb-8 md:mb-0 relative">
         <div class="relative z-10">
-          <img src="" alt="" class="mx-auto rounded-full shadow-lg object-cover h-[500px] w-full" />
-          <!-- <img src="https://res.cloudinary.com/deuh2cmub/image/upload/v1745842835/Vivek_a4cbqt.jpg" alt=""
-            class="mx-auto rounded-full shadow-lg object-cover h-[500px] w-full" /> -->
+          <!-- <img src="" alt="" class="mx-auto rounded-full shadow-lg object-cover h-[500px] w-full" /> -->
+          <img src="https://res.cloudinary.com/deuh2cmub/image/upload/v1745842835/Vivek_a4cbqt.jpg" alt=""
+            class="mx-auto rounded-full shadow-lg object-cover h-[500px] w-full" />
         </div>
         <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#04152D] opacity-50 z-0"></div>
       </div>
