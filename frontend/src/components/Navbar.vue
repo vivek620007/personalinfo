@@ -56,10 +56,22 @@ const isMenuOpen = ref(false);
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-6">
             <a href="/" class="text-white hover:text-orange-500 transition-colors">HOME</a>
-            <a href="/about" class="text-white hover:text-orange-500 transition-colors">ABOUT ME</a>
-            <a href="/skill" class="text-white hover:text-orange-500 transition-colors">SKILLS</a>
-            <a href="/project" class="text-white hover:text-orange-500 transition-colors">PROJECTS</a>
-            <a href="/contact" class="text-white hover:text-orange-500 transition-colors">CONTACT ME</a>
+            <!-- <a href="/about" class="text-white hover:text-orange-500 transition-colors">ABOUT ME</a> -->
+            <nav class="text-white hover:text-orange-500 transition-colors">
+                <a @click.prevent="scrollTo('about')">ABOUT ME</a>
+            </nav>
+            <!-- <a href="/skill" class="text-white hover:text-orange-500 transition-colors">SKILLS</a> -->
+            <nav class="text-white hover:text-orange-500 transition-colors">
+                <a @click.prevent="scrollTo('skill')">SKILLS</a>
+            </nav>
+            <!-- <a href="/project" class="text-white hover:text-orange-500 transition-colors">PROJECTS</a> -->
+            <nav class="text-white hover:text-orange-500 transition-colors">
+                <a @click.prevent="scrollTo('project')">PROJECTS</a>
+            </nav>
+            <!-- <a href="/contact" class="text-white hover:text-orange-500 transition-colors">CONTACT ME</a> -->
+            <nav class="text-white hover:text-orange-500 transition-colors">
+                <a @click.prevent="scrollTo('contact')">CONTACT</a>
+            </nav>
         </div>
 
         <!-- Mobile Menu Toggle -->
@@ -82,7 +94,10 @@ const isMenuOpen = ref(false);
             mobileMenuOpen ? 'flex' : 'hidden'
         ]">
             <a href="/" class="text-white hover:text-orange-500 transition-colors">Home</a>
-            <a href="/about" class="text-white hover:text-orange-500 transition-colors">ABOUT ME</a>
+            <!-- <a href="/about" class="text-white hover:text-orange-500 transition-colors">ABOUT ME</a> -->
+            <nav class="text-white hover:text-orange-500 transition-colors">
+                <a @click.prevent="scrollTo('about')">ABOUT ME</a>
+            </nav>
             <a href="/skill" class="text-white hover:text-orange-500 transition-colors">SKILLS</a>
             <a href="/" class="text-white hover:text-orange-500 transition-colors">PROJECTS</a>
             <a href="contact" class="text-white hover:text-orange-500 transition-colors">CONTACT ME</a>
@@ -95,7 +110,20 @@ import { ref } from 'vue'
 
 const mobileMenuOpen = ref(false)
 
+const scrollTo = (id) => {
+    const element = document.getElementById(id)
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+    }
+}
+
 const toggleMobileMenu = () => {
     mobileMenuOpen.value = !mobileMenuOpen.value
 }
 </script>
+
+<style scoped>
+html {
+    scroll-behavior: smooth;
+}
+</style>

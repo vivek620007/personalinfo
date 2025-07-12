@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import Navbar from '../components/Navbar.vue';
 
 // Project data
 const projects = ref([
@@ -35,7 +34,6 @@ const projects = ref([
 </script>
 
 <template>
-    <Navbar />
     <div class="min-h-screen max-w-4xl mx-auto px-4 py-8 pt-32">
         <div class="max-w-6xl mx-auto">
             <h1 class="text-[28px] font-bold text-center mb-12">My Projects</h1>

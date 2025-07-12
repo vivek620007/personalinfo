@@ -55,7 +55,6 @@
 
 
 <template>
-    <Navbar />
     <div class="w-100% h-700px bg-[#F9FAFB] p-10">
         <div class="max-w-6xl mx-auto px-4 py-8 font-sans">
             <!-- Page Title -->
@@ -157,7 +156,6 @@
 
 <script setup>
 import { ref } from 'vue'
-import Navbar from '../components/Navbar.vue'
 
 
 const name = ref('')

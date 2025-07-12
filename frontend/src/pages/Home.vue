@@ -129,10 +129,11 @@ import Navbar from '../components/Navbar.vue';
       </div>
     </div>
   </div>
-  <About />
-  <Skill />
-  <Contact />
-  <Project />
+  <About id="about" />
+  <Skill id="skill" />
+  <Contact id="contact" />
+  <Project id="project" />
+  <Footer />
 
 </template>
 
@@ -143,6 +144,16 @@ import About from './About.vue';
 import Skill from './Skill.vue';
 import Contact from './Contact.vue';
 import Project from './Project.vue';
+
+const scrollToAbout = () => {
+  const section = document.getElementById('about')
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+
+
 </script>
 
 <style scoped>

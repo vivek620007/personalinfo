@@ -65,7 +65,6 @@ const profileImage = ref('/path-to-your-image.jpg')
 
 
 <template>
-    <Navbar />
     <div class="min-h-screen bg-[#04152D] text-white flex items-center justify-center p-4">
         <div class="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8">
 
@@ -144,5 +143,4 @@ const profileImage = ref('/path-to-your-image.jpg')
 </template>
 
 <script setup>
-import Navbar from '../components/Navbar.vue';
 </script>

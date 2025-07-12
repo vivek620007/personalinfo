@@ -92,7 +92,6 @@ const skills = [
 
 
 <template>
-    <Navbar />
     <div class="min-h-screen max-w-4xl mx-auto px-4 py-8 pt-32">
         <h1 class="text-[28px] font-bold text-center mb-16">Skills & Technologies</h1>
 
@@ -112,7 +111,6 @@ const skills = [
 
 <script setup>
 import { ref } from 'vue';
-import Navbar from '../components/Navbar.vue';
 
 
 const skills = ref([
